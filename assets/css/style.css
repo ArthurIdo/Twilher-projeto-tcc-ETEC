@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.fundo{
+    background-color: #E6E6E6;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5%;
+    background-color: #F5C276;
+    margin: -16px;
+    padding-right: 10%;
+}
+
+.nav_links{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav_links a{
+    font-family: 'Kalnia', cursive;
+    font-weight: 500;
+    font-size: 20px;
+    color: #000;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.logo{
+    cursor: pointer;
+    width: 150px;
+    display: flex;
+    justify-content: left;
+}
+
+.perfilnav{
+    font-weight: 500;
+    font-size: 20px;
+    color: #000;
+    font-family: kalnia, cursive;
+    text-decoration: none;
+    cursor: pointer;
+    width: 40px;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    font-family: 'Kalnia', cursive;
+    font-weight: 500;
+    font-size: 64px;
+    padding: 50px;
+    padding-bottom: 50px;
+}
+
+.card1{
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.card1:hover{
+    transform: scale(1.1);
+    transition: 1.0s;
+}
+
+.texto{
+    font-family:  'kalnia', cursive;
+    font-size: 32px;
+    padding: 10px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+
+.botaoCriar {
+    font-family:  'kalnia', cursive;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #F5C276;
+    color: white;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.botaoCriar:hover {
+    background-color: #f5cc90;
+}
+
+.rodape{
+    margin: -16px;
+    background-color: #F5C276;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: 'kalnia', cursive;
+    font-size: 14px;
+}
+
+.perfil{
+    padding: 80px;
+}
+
+.perfil img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.perfil p{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Kalnia', cursive;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.sobreMim h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Kalnia', cursive;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.sobreMim p{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Kalnia', cursive;
+    font-weight: 500;
+}
+
+.sobreMim{
+    padding: 40px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+}
+
+.bandeiras{
+    display: flex;
+    justify-content: center;
+    padding: 70px;
+}
+
+
+
