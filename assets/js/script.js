@@ -1,5 +1,5 @@
 function abrirNovaAba() {
-    window.open('formulario.html', '_blank');
+    window.open('formulario.php', );
 }
 
 // anexar imagem

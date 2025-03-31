@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Perfil</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbarStyle.css">
     <link rel="shortcut icon" href="assets/img/colherFavicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -15,9 +16,10 @@
 </head>
 
 <body class="fundo p-3 m-0 border-0 bd-example m-0 border-0 bd-example-cssgrid">
-
     <!-- INICIO NAVBAR -->
     <header>
+
+
         <a href="index.html"><img class="logo" src="/assets/img/colherIcon.png" alt="logo"></a>
 
         <div class="nav_links">
@@ -26,44 +28,47 @@
             <a href="#">Comunidade </a>
         </div>
 
-        <a class="perfilnav" href="perfil.php">Perfil</a>
+        <a class="perfilnav" href="perfil.html">Perfil</a>
         <!-- FIM NAVBAR -->
     </header>
 
     <section>
-        <div>
-            <h1 class="home">Home</h1>
+        <div class="perfil">
+            <img src="assets/img/user.png" alt="">
+            <p>Arthur Ido</p>
+        </div>
+        
+        <div class="sobreMim">
+            <h1>Sobre mim</h1>
+            <p>Olá, sou Arthur Ido, tenho 20 anos e sou estudante de Ciência da Computação. Gosto de cozinhar e
+                compartilhar minhas receitas com vocês.</p>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="tituloMinhasReceitas">
+            <h2>Minhas Receitas</h2>
         </div>
 
-        <!-- topicos de receitas -->
-        <div class="d-flex justify-content-center grid gap-3">
-            <div class="p-2 g-col-6">
-                <a class="text-decoration-none" href="italia.html">
-                    <img class="card1 rounded-4" src="assets/img/italia.jpg" width="500px"></a>
-                <p class="texto">Itália</p>
-            </div>
-            <div class="p-2 g-col-6">
-                <a class="text-decoration-none" href="japao.html">
-                    <img class="card1 rounded-4" src="assets/img/japao.jpg" width="500px"></a>
-                <p class="texto">Japão</p>
-            </div>
+        <div class="container">
+            <a href="" class="receita" target="_blank">
+                <div class="imagem"><img src="assets/img/criar.png" width="100%"></div>
+                <div class="conteudo">
+                    <div class="titulo">Criar uma nova receita</div>
+                    <div class="descricao">Clique aqui para criar uma nova receita</div>
+                </div>
+            </a>
+    
+            <a href="" class="receita" target="_blank">
+                <div class="imagem">Foto</div>
+                <div class="conteudo">
+                    <div class="titulo">Nome da Receita</div>
+                    <div class="descricao">Uma breve descrição da receita.</div>
+                </div>
+            </a>
         </div>
-
-        <div class="d-flex justify-content-center grid gap-3">
-            <div class="p-2 g-col-6">
-                <a class="text-decoration-none" href="italia.html">
-                    <img class="card1 rounded-4" src="assets/img/italia.jpg" width="500px"></a>
-                <p class="texto">Itália</p>
-            </div>
-            <div class="p-2 g-col-6">
-                <a class="text-decoration-none" href="japao.html">
-                    <img class="card1 rounded-4" src="assets/img/japao.jpg" width="500px"></a>
-                <p class="texto">Japão</p>
-            </div>
-        </div>
-        <div>
-            <button class="botaoCriar" onclick="abrirNovaAba()">CRIAR</button>
-        </div>
+    
     </section>
 
     <section>
@@ -75,7 +80,6 @@
             <p>Versão: </p>
         </footer>
     </section>
-
 
     <script src="assets/js/script.js"></script>
 </body>

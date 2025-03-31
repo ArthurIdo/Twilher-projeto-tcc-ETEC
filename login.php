@@ -1,25 +1,3 @@
-<?php
-
-    if(isset($_POST['submit']))
-    {
-        // print_r($_POST['nome']);
-        // print_r('<br>');
-        // print_r($_POST['email']);
-        // print_r('<br>');
-        // print_r($_POST['senha']);
-
-
-        include_once('config.php');
-
-        // Inserir dados no banco de dados
-           $nome = $_POST['nome'];
-           $email = $_POST['email'];
-           $senha = $_POST['senha'];
-
-           $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,senha) VALUES('$nome','$email','$senha')");
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -47,29 +25,22 @@
             </div>
 
             <div class="credenciais">
-                <form action="login.php" method="POST">
+                <form action="registroLogin.php" method="POST">
+
                 <div class="p-4">
-                    <label for="nome" class="form-label">Nome:</label>
-                    <input type="text" id="nome" name="nome" class="form-control" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
                 </div>
 
                 <div class="p-4">
-                    <label for="email" class="form-label">Email:</label>
-                    <input type="email" id="email" name="email" class="form-control" required>
-                </div>
-
-                <div class="p-4">
-                    <label for="senha" class="form-label">Senha:</label>
-                    <input type="password" id="senha" name="senha" class="form-control" required>
+                    <input type="password" id="senha" name="senha" placeholder="Senha" required>
                 </div>
 
                 <div>
-                <input class="botaoLogin" type="submit" name="submit" id="submit">
+                <input class="botaoLogin" type="submit" name="submit" value="Enviar">
             </div>
                 </form>
             </div>
         </div>
     </section>
 </body>
-
 </html>
