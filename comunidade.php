@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Comunidade</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/img/colherFavicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -30,41 +30,23 @@
         <!-- FIM NAVBAR -->
     </header>
 
-    <section>
-        <div>
-            <h1 class="home">Home</h1>
-        </div>
 
-        <!-- topicos de receitas -->
-        <div class="d-flex justify-content-center grid gap-3">
-            <div class="p-2 g-col-6">
-                <a class="text-decoration-none" href="italia.html">
-                    <img class="card1 rounded-4" src="assets/img/italia.jpg" width="500px"></a>
-                <p class="texto">Itália</p>
-            </div>
-            <div class="p-2 g-col-6">
-                <a class="text-decoration-none" href="japao.html">
-                    <img class="card1 rounded-4" src="assets/img/japao.jpg" width="500px"></a>
-                <p class="texto">Japão</p>
-            </div>
-        </div>
+    <h1>Publicar Artigo</h1>
+    <form action="publicar.php" method="POST">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required><br><br>
 
-        <div class="d-flex justify-content-center grid gap-3">
-            <div class="p-2 g-col-6">
-                <a class="text-decoration-none" href="italia.html">
-                    <img class="card1 rounded-4" src="assets/img/italia.jpg" width="500px"></a>
-                <p class="texto">Itália</p>
-            </div>
-            <div class="p-2 g-col-6">
-                <a class="text-decoration-none" href="japao.html">
-                    <img class="card1 rounded-4" src="assets/img/japao.jpg" width="500px"></a>
-                <p class="texto">Japão</p>
-            </div>
-        </div>
+        <label for="conteudo">Conteúdo:</label><br>
+        <textarea id="conteudo" name="conteudo" rows="6" cols="40" required></textarea><br><br>
+
+        <input type="submit" value="Publicar">
+    </form>
+
+
         <div>
             <button class="botaoCriar" onclick="abrirNovaAba()">CRIAR</button>
         </div>
-    </section>
+
 
     <section>
         <footer class="rodape">
