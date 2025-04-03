@@ -22,8 +22,8 @@
 
         <div class="nav_links">
             <a href="index.html">Home</a>
-            <a href="#">Receitas</a>
-            <a href="comunidade.php">Comunidade </a>
+            <a href="receitas.html">Receitas</a>
+            <a href="exibirPublicacao.php">Comunidade </a>
         </div>
 
         <a class="perfilnav" href="perfil.php">Perfil</a>

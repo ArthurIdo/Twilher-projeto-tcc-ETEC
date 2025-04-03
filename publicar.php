@@ -23,7 +23,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO publicacoes (titulo, conteudo) VALUES ('$titulo', '$conteudo')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "Publicação realizada com sucesso!";
+        // Redireciona para a página inicial após a publicação
+        header("Location: exibirPublicacao.php");
+        exit(); // Garante que o script pare de executar após o redirecionamento
     } else {
         echo "Erro: " . $sql . "<br>" . $conn->error;
     }
