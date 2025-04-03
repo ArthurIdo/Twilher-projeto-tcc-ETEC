@@ -1,6 +1,13 @@
 <?php
 
-    // print_r($_REQUEST);
+    $servername = "localhost";
+    $username = "root"; 
+    $password = ""; 
+    $dbname = "twilher tcc";
+
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
 
     if(isset($_POST['submit']) && !empty($_POSt['email']) && !empty($_POST['senha'])) 
     {

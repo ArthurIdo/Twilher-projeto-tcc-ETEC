@@ -19,7 +19,7 @@
 
     <!-- INICIO NAVBAR -->
     <header>
-        <a href="index.html"><img class="logo" src="/assets/img/colherIcon.png" alt="logo"></a>
+        <a href="index.html"><img class="logo" src="assets/img/colherIcon.png" alt="logo"></a>
 
         <div class="nav_links">
             <a href="index.html">Home</a>

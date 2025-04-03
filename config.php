@@ -3,7 +3,7 @@
     $dbHost = 'localhost';
     $dbUsername = 'root';
     $dbPassword = '';
-    $dbName = 'formulario_login';
+    $dbName = 'twilher tcc';
 
     $conexao = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
 
